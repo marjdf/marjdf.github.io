@@ -5,17 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Good Morning, Daddy!</title>
     <style>
-        body { font-family: 'Courier New', Courier, monospace; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; text-align: center; color: #000000; }
+        body { 
+            font-family: 'Courier New', Courier, monospace; 
+            line-height: 1.6; 
+            max-width: 600px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            text-align: center; 
+            color: #000000; 
+        }
         .sweet { font-weight: bold; font-size: 1.4em; color: #0969da; }
         .funny { font-style: italic; color: #000000; margin: 20px 0; }
         .footer { font-weight: bold; color: #000000; }
+        
+        /* Button styling */
+        .click-btn {
+            background-color: #0969da;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-family: inherit;
+        }
+        .click-btn:hover {
+            background-color: #044289;
+        }
+
+        /* Hidden message content */
+        #hidden-message {
+            display: none;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <p class="sweet">Good morning, Daddy!</p>
 
-    <p class="funny">Work hard today... just remember: kahit gaano kadaming IT tickets at system bugs ang ma-resolve mo today, ako pa rin ang number 1 main problem mo! 😜 status: UNRESOLVED forever.<br><br>At syempre, kapag sahod day mo, sahod day ko din! 💸</p>
+    <!-- Initial Button -->
+    <button id="main-btn" class="click-btn" onclick="showMessage()">Click Me 💌</button>
 
-    <p class="footer">I love you! Have a smooth, zero-downtime day at work. ❤️</p>
+    <!-- Content revealed after click -->
+    <div id="hidden-message">
+        <p class="funny">Work hard today... just remember: kahit gaano kadaming IT tickets at system bugs ang ma-resolve mo today, ako pa rin ang number 1 main problem mo! 😜 status: UNRESOLVED forever.<br><br>At syempre, kapag sahod day mo, sahod day ko din! 💸</p>
+
+        <p class="footer">I love you! Have a smooth, zero-downtime day at work. ❤️</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            // Hide the button
+            document.getElementById('main-btn').style.display = 'none';
+            // Show the hidden message
+            document.getElementById('hidden-message').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
