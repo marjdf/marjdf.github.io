@@ -3,196 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marjelyn Fernandez | Software QA & Product Assurance Engineer</title>
+    <title>Marjelyn Fernandez | Software QA Engineer</title>
     <style>
-        :root {
-            --bg: #0d1117;
-            --card-bg: #161b22;
-            --border: #30363d;
-            --accent: #58a6ff;
-            --accent-hover: #1f6feb;
-            --text-main: #c9d1d9;
-            --text-bright: #f0f6fc;
-            --text-muted: #8b949e;
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.6; 
+            max-width: 600px; 
+            margin: 60px auto; 
+            padding: 20px; 
+            text-align: center; 
+            color: #f0f6fc; 
+            background-color: #0d1117;
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
+        .card {
+            background: #161b22;
             padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        header {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 40px;
-            text-align: center;
-            margin-bottom: 24px;
+            border: 1px solid #30363d;
         }
-
-        h1 {
-            color: var(--text-bright);
-            font-size: 2.2em;
-            margin-bottom: 8px;
-        }
-
-        .subtitle {
-            color: var(--accent);
-            font-size: 1.1em;
-            font-weight: 500;
-            margin-bottom: 16px;
-        }
-
-        .bio {
-            max-width: 650px;
-            margin: 0 auto;
-            color: var(--text-muted);
-            font-size: 0.98em;
-        }
-
-        .section {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 32px;
-            margin-bottom: 24px;
-        }
-
-        h2 {
-            color: var(--text-bright);
-            font-size: 1.4em;
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 8px;
-        }
-
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-tag {
-            background: rgba(56, 139, 253, 0.15);
-            color: var(--accent);
-            border: 1px solid rgba(56, 139, 253, 0.4);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 16px;
-        }
-
-        .project-card {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 20px;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-2px);
-            border-color: var(--accent);
-        }
-
-        .project-card h3 {
-            color: var(--text-bright);
-            font-size: 1.1em;
-            margin-bottom: 8px;
-        }
-
-        .project-card p {
-            font-size: 0.9em;
-            color: var(--text-muted);
-        }
-
-        .contact-section {
-            text-align: center;
-        }
-
+        h1 { color: #f0f6fc; font-size: 2em; margin-bottom: 5px; }
+        .title { color: #58a6ff; font-weight: 500; margin-bottom: 20px; }
+        .verse { font-style: italic; color: #8b949e; margin: 20px 0; font-size: 1.1em; }
         .btn {
             display: inline-block;
-            background-color: var(--accent);
+            background-color: #238636;
             color: #ffffff;
-            padding: 12px 24px;
+            padding: 12px 28px;
             text-decoration: none;
             border-radius: 6px;
-            font-weight: 600;
-            transition: background-color 0.2s;
-            margin-top: 12px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 15px;
         }
-
-        .btn:hover {
-            background-color: var(--accent-hover);
-        }
+        .btn:hover { background-color: #2ea043; }
     </style>
 </head>
 <body>
+    <div class="card">
+        <h1>Marjelyn Fernandez</h1>
+        <p class="title">Software QA & Product Assurance Engineer</p>
+        
+        <p class="verse">"I can do all things through Christ who gives me strength."</p>
 
-    <div class="container">
-        <header>
-            <h1>Marjelyn Fernandez</h1>
-            <p class="subtitle">Software QA Test Engineer | Product Assurance</p>
-            <p class="bio">Passionate about delivering high-quality software solutions through detailed manual testing, structured defect tracking, and process optimization.</p>
-        </header>
-
-        <section class="section">
-            <h2>Core Competencies</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">Software Quality Assurance</span>
-                <span class="skill-tag">Manual Testing</span>
-                <span class="skill-tag">Defect Tracking & Issue Resolution</span>
-                <span class="skill-tag">Test Case Planning & Execution</span>
-                <span class="skill-tag">Product Assurance</span>
-                <span class="skill-tag">System Reliability</span>
-                <span class="skill-tag">Cross-functional Collaboration</span>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Key Focus Areas</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>🔍 Quality Verification</h3>
-                    <p>Executing thorough end-to-end test scenarios to ensure application stability and compliance with requirements.</p>
-                </div>
-                <div class="project-card">
-                    <h3>🐛 Defect Lifecycle Management</h3>
-                    <p>Identifying, documenting, and tracking system bugs to resolution to prevent production issues.</p>
-                </div>
-                <div class="project-card">
-                    <h3>⚡ Process Optimization</h3>
-                    <p>Standardizing quality assurance protocols to improve delivery speed and system performance.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section contact-section">
-            <h2>Let's Connect</h2>
-            <p>Open for opportunities, projects, and professional collaborations.</p>
-            <a class="btn" href="https://www.linkedin.com/in/marjelyn-fernandez-430a99247" target="_blank">Connect on LinkedIn</a>
-        </section>
+        <a class="btn" href="https://www.linkedin.com/in/marjelyn-fernandez-430a99247" target="_blank">Hire Me</a>
     </div>
-
 </body>
 </html>
